@@ -1,0 +1,603 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<style>
+    .dropdown-submenu {
+        position: relative;
+        }
+
+        .dropdown-submenu .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -1px;
+        }
+    .jumbotron-image{
+        background-image: url(static/bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        height: 500px;
+        margin-top: 25px;
+    }
+
+    .card-deck{
+        margin-top: -150px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .card-header{
+        font-weight: 800;
+    }
+
+    .card-title{
+        font-size: 24px;
+        font-weight: 200;
+        color: rgb(130, 128, 127);
+    }
+    .carousel-control-next,
+    .carousel-control-prev{
+        filter: invert(100%);
+    }
+
+</style>
+
+<body>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light border-bottom bg-light">
+        <h2 class="navbar-brand text-primary"><strong>Spaaro.</strong></h2>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsupport">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarsupport">
+                <ul class="navbar-nav ms-auto pl-4">
+                    <li>
+                        <a class="nav-link dropdown-toggle" id="navbarLanding" data-toggle="dropdown" href="#">
+                            Landings
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-xl p-0" aria-labelledby="navbarLanding">
+                            <div class="row gx-0">
+                                <div class="col-12 col-lg-6 ">
+                                    <div class="dropdown-img-start text-center" style="background-image: url(static/sneakers2.jpg);">
+                                        <h4 class="fw-bold text-white my-3  pt-3 text-center mb-0">
+                                            Want to see an overview?
+                                        </h4>
+                                        <p class="fs-sm text-center my-4 text-white">
+                                            See all the pages at once.
+                                        </p>
+                                        <a href="#" class="btn btn-primary my-4 shadow-dark">
+                                            View all pages
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="dropdown-body">
+                                        <div class="row gx-0">
+                                            <div class="col-6">
+                                                <h6 class="dropdown-header text-info">
+                                                    Services
+                                                </h6>
+                                                <p class="dropdown-item">
+                                                    Rental
+                                                </p>
+                                                <p class="dropdown-item">
+                                                    Joblisting
+                                                </p>
+
+                                                <h6 class="dropdown-header text-info">
+                                                    Apps
+                                                </h6>
+                                                <p class="dropdown-item">
+                                                    Desktop
+                                                </p>
+                                                <p class="dropdown-item">
+                                                    Mobile
+                                                </p>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <h6 class="dropdown-header text-info">
+                                                    Web
+                                                </h6>
+                                                <p class="dropdown-item">
+                                                    Basic
+                                                </p>
+                                                <p class="dropdown-item">
+                                                    Startup
+                                                </p>
+                                                <p class="dropdown-item">
+                                                    Enterprise
+                                                </p>
+                                                <p class="dropdown-item">
+                                                    Agency
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="nav-link dropdown-toggle" id="navbarPages" role="button" data-toggle="dropdown" href="#">
+                            Pages
+                        </a>
+                        <div class="dropdown-menu drop" aria-labelledby="navbarPages">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h6 class="dropdown-header text-info">
+                                            Career
+                                        </h6>
+                                        <p class="dropdown-item">
+                                            Listing
+                                        </p>
+                                        <p class="dropdown-item">
+                                            Opening
+                                        </p>
+
+                                        <h6 class="dropdown-header text-info">
+                                            Company
+                                        </h6>
+                                        <p class="dropdown-item">
+                                            About 
+                                        </p>
+                                        <p class="dropdown-item">
+                                            Pricing
+                                        </p>
+
+                                    </div>
+                                    <div class="col-3">
+                                        <h6 class="dropdown-header text-info">
+                                            Help Center
+                                        </h6>
+                                        <p class="dropdown-item">
+                                            Overview
+                                        </p>
+                                        <p class="dropdown-item">
+                                            Articles
+                                        </p>
+
+                                        <h6 class="dropdown-header text-info">
+                                            Contact
+                                        </h6>
+                                        <p class="dropdown-item">
+                                            Basic
+                                        </p>
+                                        <p class="dropdown-item">
+                                            Cover
+                                        </p>
+                                    </div>
+                                    <div class="col-3">
+                                        <h6 class="dropdown-header text-info">
+                                            Blog
+                                        </h6>
+                                        <p class="dropdown-item">
+                                            Rich View
+                                        </p>
+                                        <p class="dropdown-item">
+                                            Search
+                                        </p>
+                                    </div>
+                                    <div class="col-3">
+                                        <h6 class="dropdown-header text-info">
+                                            Portfolio
+                                        </h6>
+                                        <p class="dropdown-item">
+                                            Masonry
+                                        </p>
+                                        <p class="dropdown-item">
+                                            Grid Flow
+                                        </p>
+                                    </div>
+                                </div> 
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" id="menu" 
+                            data-toggle="dropdown" class="nav-link dropdown-toggle"
+                            data-display="static">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item dropdown-submenu">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Submenu-1</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="#">Item-1</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Item-2</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Item-3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-item dropdown-submenu">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Submenu-2</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="#">Item-1</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Item-2</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Item-3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <a class="navbar-btn btn btn-sm btn-primary list mx-3 my-3 px-2 py-2" style="position: relative; margin-right: 20px;" href="#">Buy Now</a>
+            </div>
+    </nav>
+    <div class="jumbotron jumbotron-image text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading p-4 text-light">
+                Simple, fair pricing.
+            </h1>
+            <p class="lead p-4 text-light">
+               <strong>All types of businesses need access to development resources, so we give you the option to decide how much you need to use.
+            </strong> </p>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-header text-center text-black">Basic</div>
+                <div class="card-body  text-center bg-light">
+                  <h5 class="card-title">$0/mo<br>per seat</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer text-center">
+                  <button class="btn btn-success">Buy Now</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header text-center">Standard</div>
+                <div class="card-body  text-center bg-light">
+                  <h5 class="card-title">$29/mo<br>per seat</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer text-center">
+                    <button class="btn btn-success">Buy Now</button>
+                </div>
+              </div>
+              <div class="card text-center">
+                <div class="card-header">Premium</div>
+                <div class="card-body text-center bg-light">
+                  <h5 class="card-title">$49/mo<br>per seat</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+                <div class="card-footer text-center">
+                    <button class="btn btn-success">Buy Now</button>
+                </div>
+              </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="jumbotro bg-light p-4">
+        <div class="container text-center p-4">
+            <h4 class="jumbotron-heading text-info p-4" style="font-size: medium;" >ENTERPRISE</h4>
+            <span style="font-size: large;">Business grade quality </span><span style="font-size: large; color: rgb(28, 122, 204);">for all plans</span>
+            <p class="text-muted my-3">Build a beautiful, modern website with our flexible Bootstrap components all built from scratch.</p>
+        </div>
+        <div class="container text-center p-4">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4>Built for developers</h4>
+                    <p class="text-muted my-3">Sparro is designed to enhance your productivity. It offers adjustable settings, automation tools, comprehensive guides, and modular elements.</p>
+                </div>
+                <div class="col-sm-4">
+                    <h4>Designed to be modern</h4>
+                    <p class="text-muted my-3">Crafted to reflect contemporary aesthetics. Sparro appears sleek, understated, and elegant.</p>
+                </div>
+                <div class="col-sm-4">
+                    <h4>Documentation for everything</h4>
+                    <p class="text-muted my-3">We've created detailed guides for all features and resources, ensuring you always have the information you need at your fingertips.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container-fluid bg-light p-4">
+        <h4 class="text-info text-center  p-2" style="font-size: medium;">FAQ</h4>
+        <h2 class="py-2 text-center ">Frequently asked questions.</h2>
+        <p class="mb-4 text-center text-muted " style="font-size: medium;">Let us help answer the most common questions you might have.</p>
+        <div class="container my-4 py-4" style="font-size: large;">
+            <div class="row">
+                <div class="col-5">
+                    <p>Can I use Sparro. for my clients?</p>
+                    <p style="color: gray;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in nibh nec erat tincidunt porta. Donec ac mauris ullamcorper quam ullamcorper cursus eu in dui. Aliquam cursus accumsan laoreet.</p>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-5">
+                    <p>Is there a money back guarantee?</p>
+                    <p style="color: gray;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in nibh nec erat tincidunt porta. Donec ac mauris ullamcorper quam ullamcorper cursus eu in dui. Aliquam cursus accumsan laoreet.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <p>Do I get free updates?</p>
+                    <p style="color: gray;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in nibh nec erat tincidunt porta. Donec ac mauris ullamcorper quam ullamcorper cursus eu in dui. Aliquam cursus accumsan laoreet.</p>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-5">
+                    <p>Does it work with my backend</p>
+                    <p style="color: gray;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in nibh nec erat tincidunt porta. Donec ac mauris ullamcorper quam ullamcorper cursus eu in dui. Aliquam cursus accumsan laoreet.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <p>Can I use Sparro. for my clients?</p>
+                    <p style="color: gray;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in nibh nec erat tincidunt porta. Donec ac mauris ullamcorper quam ullamcorper cursus eu in dui. Aliquam cursus accumsan laoreet.</p>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-5">
+                    <p>Is there a money back guarantee?</p>
+                    <p style="color: gray;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in nibh nec erat tincidunt porta. Donec ac mauris ullamcorper quam ullamcorper cursus eu in dui. Aliquam cursus accumsan laoreet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container-fluid py-4" style="background-color: rgb(241, 237, 237);">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner text-center py-4">
+                <div class="carousel-item active py-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-4">
+                                <h2 style="color: brown;">AirBnb</h2>
+                                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, asperiores accusamus unde eos nulla quos dicta consequuntur sed aspernatur a vitae amet quas, est fugit ut? Fugit incidunt sed vitae."</p>
+                                <p class="text-muted" style="font-size: small;">SPARRO SPARRO</p>
+                            </div>
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-4">
+                                <h2 style="color: brown;">Pinterest</h2>
+                                <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, asperiores accusamus unde eos nulla quos dicta consequuntur sed aspernatur a vitae amet quas, est fugit ut? Fugit incidunt sed vitae.”</p>
+                                <p class="text-muted" style="font-size: small;">SHASH SHASH</p>    
+                            </div>
+                            <div class="col-sm-1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item py-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-4">
+                                <h2 style="color: brown;">AirBnb</h2>
+                                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, asperiores accusamus unde eos nulla quos dicta consequuntur sed aspernatur a vitae amet quas, est fugit ut? Fugit incidunt sed vitae."</p>
+                                <p class="text-muted" style="font-size: small;">SPARRO SPARRO</p>
+                            </div>
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-4">
+                                <h2 style="color: brown;">Pinterest</h2>
+                                <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, asperiores accusamus unde eos nulla quos dicta consequuntur sed aspernatur a vitae amet quas, est fugit ut? Fugit incidunt sed vitae.”</p>
+                                <p class="text-muted" style="font-size: small;">SHASH SHASH</p>    
+                            </div>
+                            <div class="col-sm-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    
+    <footer class="py-8 py-md-11" style="background-color: rgb(28, 28, 89);">
+        <div class="container text-white py-4">
+          <div class="row py-4">
+            <div class="col-12 col-md-4 col-lg-3">
+      
+              <!-- Brand -->
+              <h2 class="text-primary"><strong>Sparro.</strong></h2>
+      
+              <!-- Text -->
+              <p class="text-gray-700 mb-2">
+                A better way to build.
+              </p>
+      
+              <!-- Social -->
+              
+      
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+      
+              <!-- Heading -->
+              <h6 class="fw-bold text-uppercase"  style="color: rgb(60, 60, 179);">
+                Products
+              </h6>
+      
+              <!-- List -->
+              <ul class="list-unstyled text-body-secondary mb-6 mb-md-8 mb-lg-0 text-muted">
+                <li class="mb-3">
+                  <a href="#!" class="text-reset">
+                    Some Context
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-reset">
+                    UI Kit
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-reset">
+                    Styleguide
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-reset">
+                    Documentation
+                  </a>
+                </li>
+                <li>
+                  <a href="#!" class="text-reset">
+                    Changelog
+                  </a>
+                </li>
+              </ul>
+      
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+      
+              <!-- Heading -->
+              <h6 class="fw-bold text-uppercase"  style="color: rgb(60, 60, 179);">
+                Services
+              </h6>
+      
+              <!-- List -->
+              <ul class="list-unstyled text-body-secondary mb-6 mb-md-8 mb-lg-0 text-muted">
+                <li class="mb-3">
+                  <a href="#!" class="text-reset">
+                    Documentation
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-reset">
+                    Changelog
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-reset">
+                    Pagebuilder
+                  </a>
+                </li>
+                <li>
+                  <a href="#!" class="text-reset">
+                    UI Kit
+                  </a>
+                </li>
+              </ul>
+      
+            </div>
+            <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0 ">
+      
+              <!-- Heading -->
+              <h6 class="fw-bold text-uppercase" style="color: rgb(60, 60, 179);" >
+                Connect
+              </h6>
+      
+              <!-- List -->
+              <ul class="list-unstyled text-body-secondary mb-0 text-muted">
+                <li class="mb-3">
+                  <a href="#!" class="text-reset">
+                    Some Context
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-reset">
+                    UI Kit
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-reset">
+                    Styleguide
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-reset">
+                    Documentation
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-reset">
+                    Changelog
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-reset">
+                    Documentation
+                  </a>
+                </li>
+                <li>
+                  <a href="#!" class="text-reset">
+                    Changelog
+                  </a>
+                </li>
+              </ul>
+      
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+      
+              <!-- Heading -->
+              <h6 class="fw-bold text-uppercase" style="color: rgb(60, 60, 179);">
+                Legal
+              </h6>
+      
+              <!-- List -->
+              <ul class="list-unstyled text-body-secondary mb-0 text-muted">
+                <li class="mb-3">
+                  <a href="#!" class="text-reset">
+                    Documentation
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-reset">
+                    Changelog
+                  </a>
+                </li>
+                <li>
+                  <a href="#!" class="text-reset">
+                    Pagebuilder
+                  </a>
+                </li>
+              </ul>
+      
+            </div>
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+<script>
+    $('.dropdown-submenu > a').on("click", function(e) {
+    var submenu = $(this);
+    $('.dropdown-submenu .dropdown-menu').removeClass('show');
+    submenu.next('.dropdown-menu').addClass('show');
+    e.stopPropagation();
+});
+
+$('.dropdown').on("hidden.bs.dropdown", function() {
+    // hide any open menus when parent closes
+    $('.dropdown-menu.show').removeClass('show');
+});
+
+
+</script>
+</html>
